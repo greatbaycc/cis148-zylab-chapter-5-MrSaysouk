@@ -3,8 +3,19 @@ import java.util.Scanner;
 public class Max {
 
     public int findMax() {
-        /* Type your code here. */
-        return 0; //replace this when ready to work on this method
+        Scanner scnr = new Scanner(System.in);
+        int maxVal = 0;
+        int currVal;
+
+        do {
+            currVal = scnr.nextInt();
+
+            if (currVal > maxVal) {
+                maxVal = currVal;
+            }
+        } while (currVal >= 0);
+
+        return maxVal;
     }
 
     public static void main(String[] args) {
